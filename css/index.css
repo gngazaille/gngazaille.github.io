@@ -1,0 +1,105 @@
+/* color palette */
+:root {
+  --burgundy: #820933;
+  --hot-pink: #D84797;
+  --pale-aqua: #D2FDFF;
+  --bright-blue: #3ABEFF;
+  --aqua-green: #26FFE6;
+  --white: #ffffff;
+  --text-dark: #111;
+}
+
+/* global styles */
+body{
+    background-color: var(--pale-aqua) !important;
+    color: var(--text-dark) !important;
+    padding: 10px;
+}
+
+/* navbar styles */
+.navbar{
+    position: sticky !important;
+    top: 0 !important;
+    padding: 10px !important;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.navbar.sticking{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    border-radius: 30px;
+    transition: 500ms;
+}
+
+.navbar-item{
+    color: var(--text-dark);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar-item.active {
+    color: var(--text-dark);
+    font-weight: bold;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+/* banner styles */
+.banner{
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.banner p{
+    margin-top: 25px;
+}
+
+/* about style */
+.about{
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: var(--white);
+    max-width: 100%;
+    height: 20rem;
+}
+
+/* projects style */
+.projects{
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: var(--white);
+    max-width: 100%;
+    height: 20rem;
+}
+
+/* resume style */
+.resume{
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: var(--white);
+    max-width: 100%;
+    height: 20rem;
+}
+
+/* footer style */
+footer{
+    border-top: 1px solid black;
+    margin-top: 25px;
+}
