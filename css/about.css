@@ -1,0 +1,71 @@
+body{
+    background: linear-gradient(180deg,rgba(210, 253, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+/* profile pic style */
+.profpic{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profpic h1{
+    margin-bottom: 25px;
+}
+.profpic img{
+    max-width: 100%;
+    border-radius: 50px 50px 0 0;
+    object-fit: cover;
+}
+
+/* bio style */
+.bio{
+    padding: 12.5px;
+}
+
+/* experience style */
+.experience{
+    background-color: var(--bright-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 12.5px;
+    margin: 12.5px 0px;
+}
+.job p{
+    line-height: .5;
+    margin: 10px;
+}
+.company{
+    font-weight: bold;
+    color: var(--white);
+}
+.title{
+    color: var(--white);
+}
+.year p{
+    color: var(--white);
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* out of office style */
+.ofo{
+    padding: 12.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ofo img{
+    max-width: 100%;
+    height: auto;
+    margin-top: 12.5px;
+    border-radius: 50px;
+}
+
+/* contact style */
+.contact{
+    padding: 12.5px;
+}

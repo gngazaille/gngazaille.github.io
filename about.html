@@ -4,25 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <title>About - My Portfolio</title>
 </head>
 <body>
     <!-- navbar -->
+    <div class="navbar">
+        <a href="index.html" class="navbar-item">Home</a>
+        <a href="about.html" class="navbar-item active">About</a>
+        <a href="#" class="navbar-item">Projects</a>
+        <a href="Resume 2025-2026.pdf" class="navbar-item" target="_blank">Resume</a>
+    </div>
+
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="navbar">
-                    <a href="index.html" class="navbar-item">Home</a>
-                    <a href="about.html" class="navbar-item active">About</a>
-                    <a href="#" class="navbar-item">Projects</a>
-                    <a href="#" class="navbar-item" target="_blank">Resume</a>
+            <div class="col-md-12 profpic">
+                <h1>I'm Gabby.</h1>
+                <img src="imgs/profpic.JPG" alt="profile pic of me">
+            </div>
+        </div>
+    </div>
+
+    <!-- bio -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 bio">
+                <h2>A Web & Marketing Specialist working in-person and remotely.</h2>
+                <p>I'm a recent graduate from the Unviersity of North Carolina at Chapel Hill with a passion for front-end development and digital storytelling. I thrive working with smaller companies and purpose-driven teams where I can help bring ideas to life and contribute meaningfully to big-picture goals.</p>
+                <p>I'm all about creating thoughtful, impactful experiences, and I bring that same energy to everything I do, whether its coding a new feature or collaborating on a brand strategy.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- experience -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 experience">
+                <div class="job">
+                    <p class="company">CEP Compression</p>
+                    <p class="title">Marketing/E-Commerce Intern</p>
+                </div>
+                <div class="year">
+                    <p>'24 - '25</p>
+                </div>
+            </div>
+
+            <div class="col-md-12 experience">
+                <div class="job">
+                    <p class="company">Masonic Home of Missouri</p>
+                    <p class="title">Marketing Coordinator</p>
+                </div>
+                <div class="year">
+                    <p>'25 ~</p>
+                </div>
+            </div>
+
+            <div class="col-md-12 experience">
+                <div class="job">
+                    <p class="company">InternetFM</p>
+                    <p class="title">Web Developer (Electron)</p>
+                </div>
+                <div class="year">
+                    <p>'25 ~</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"  integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- out of office -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 ofo">
+                <p>When I'm not working, you'll probably find me digging through thrift shops, knitting a new waredrobe, hanging with friends, spending time my boyfriend, traveling the world, dancing like no one's watching, or playing with my pet rat, Remy.</p>
+                <img id="ofo-img" src="imgs/ofo.png" alt="plane pic">
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 contact">
+                <h2>Let's connect!</h2>
+                <p>I believe web development and marketing go hand-in-hand. If you feel the same, I'd love to talk.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+        <footer>
+            <div class="version">
+                <p id="versionp">Version</p>
+                <p>2025 © Edition</p>
+            </div>
+            <div class="socials">
+                <p id="socialsp">Socials</p>
+                <a href="#">GitHub</a>
+                <a href="Gabrielle Gazaille _ LinkedIn.html" target="_blank">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/SplitText.min.js"></script>
+    <script src="js/ScrambleTextPlugin.min.js"></script>
+    <script src="js/about.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

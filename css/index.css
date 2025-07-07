@@ -1,5 +1,5 @@
 /* color palette */
-:root {
+:root{
   --burgundy: #820933;
   --hot-pink: #D84797;
   --pale-aqua: #D2FDFF;
@@ -12,33 +12,53 @@
 /* global styles */
 body{
     background-color: var(--pale-aqua) !important;
-    color: var(--text-dark) !important;
-    padding: 10px;
+    padding: 25px;
+}
+body h1{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--burgundy)
+}
+body h2{
+    font-family: "Overlock", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--burgundy)
+
+}
+body p, a{
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color: var(--hot-pink)
+
 }
 
 /* navbar styles */
 .navbar{
     position: sticky !important;
-    top: 0 !important;
-    padding: 10px !important;
-    margin-left: 12px;
-    margin-right: 12px;
+    top: 15px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    padding: 5px 10px !important;
 }
-
 .navbar.sticking{
-    background-color: rgba(255, 255, 255, 0.5) !important;
-    border-radius: 30px;
-    transition: 500ms;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
 }
-
 .navbar-item{
-    color: var(--text-dark);
-    padding: 10px 20px;
-    text-decoration: none;
+    color: var(--hot-pink);
+    text-decoration: none !important;
+    padding: 5px 10px;
 }
-
 .navbar-item.active {
-    color: var(--text-dark);
+    color: var(--hot-pink);
     font-weight: bold;
     background-color: var(--white);
     border-radius: 20px;
@@ -46,60 +66,133 @@ body{
 
 /* banner styles */
 .banner{
-    margin-top: 25px;
     padding: 25px;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-
 .banner p{
-    margin-top: 25px;
+    margin-top: 12.5px;
 }
 
-/* about style */
-.about{
-    margin-top: 25px;
+/* skills style */
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills p{
+    background-color: var(--bright-blue);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* technologies flip cards */
+.technologies{
+    text-align: center;
     padding: 25px;
+}
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12.5px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 75px;
+    height: 75px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner, .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flip-card-front img {
+    max-width: 75%;
+    height: auto;
+}
+.flip-card-back {
+    background-color: var(--bright-blue);
+    color: var(--white);
+    transform: rotateY(180deg);
+    padding: 25px;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 12px;
+}
+
+/* page boxes style */
+.boxes{
+    position: relative;
+    padding: 25px;
+    margin: 25px 0px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: end;
+    justify-content: space-between;
     background-color: var(--white);
-    max-width: 100%;
     height: 20rem;
 }
-
-/* projects style */
-.projects{
-    margin-top: 25px;
-    padding: 25px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    background-color: var(--white);
-    max-width: 100%;
-    height: 20rem;
+.boxes h1{
+    font-style: italic;
 }
-
-/* resume style */
-.resume{
-    margin-top: 25px;
-    padding: 25px;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    background-color: var(--white);
-    max-width: 100%;
-    height: 20rem;
+.boxes a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2rem;
+    color: var(--hot-pink);
 }
 
 /* footer style */
 footer{
-    border-top: 1px solid black;
-    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid var(--bright-blue);
+    padding: 25px;
+}
+
+.version{
+    padding: 12.5px;
+    line-height: .5;
+}
+#versionp{
+    color: var(--burgundy);
+}
+
+.socials{
+    padding: 12.5px;
+    line-height: .5;
+}
+#socialsp{
+    color: var(--burgundy);
+}
+.socials a{
+    margin: 10px;
+    text-decoration: none;
+    color: var(--hot-pink);
 }
