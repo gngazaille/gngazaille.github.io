@@ -1,41 +1,27 @@
-/* color palette */
-:root{
-  --burgundy: #820933;
-  --hot-pink: #D84797;
-  --pale-aqua: #D2FDFF;
-  --bright-blue: #3ABEFF;
-  --aqua-green: #26FFE6;
-  --white: #ffffff;
-  --text-dark: #111;
-}
-
 /* global styles */
 body{
-    background-color: var(--pale-aqua) !important;
+    background-color: #E6F2FA !important;
     padding: 25px;
 }
 body h1{
-    font-family: "Roboto Mono", monospace;
-    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     font-style: normal;
-    font-size: 2rem;
-    color: var(--burgundy)
+    font-size: 3rem;
+    color: #004C99;
+    line-height: 1;
 }
 body h2{
-    font-family: "Overlock", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.5rem;
-    color: var(--burgundy)
-
+    color: #004C99;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
 }
 body p, a{
-    font-family: "Hind Vadodara", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1rem;
-    color: var(--hot-pink)
-
+    color: #004C99;;
 }
 
 /* navbar styles */
@@ -46,6 +32,7 @@ body p, a{
     flex-direction: row !important;
     justify-content: space-between !important;
     padding: 5px 10px !important;
+    z-index: 1000;
 }
 .navbar.sticking{
     -webkit-backdrop-filter: blur(10px);
@@ -53,14 +40,13 @@ body p, a{
     border-radius: 20px;
 }
 .navbar-item{
-    color: var(--hot-pink);
+    color: #004C99;
     text-decoration: none !important;
     padding: 5px 10px;
 }
 .navbar-item.active {
-    color: var(--hot-pink);
     font-weight: bold;
-    background-color: var(--white);
+    background-color: #fff;
     border-radius: 20px;
 }
 
@@ -71,9 +57,11 @@ body p, a{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 25px !important;
 }
 .banner p{
-    margin-top: 12.5px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 /* skills style */
@@ -81,10 +69,11 @@ body p, a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: #004C99;
+    margin-bottom: 25px;
 }
 .skills p{
-    background-color: var(--bright-blue);
-    color: var(--white);
+    background-color: white;
     border-radius: 20px;
     padding: 5px 10px;
     font-size: 12px;
@@ -94,12 +83,14 @@ body p, a{
 .technologies{
     text-align: center;
     padding: 25px;
+    margin-bottom: 25px;
 }
 .tech-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 12.5px;
+    margin-top: 25px;
 }
 .flip-card {
     background-color: transparent;
@@ -114,11 +105,7 @@ body p, a{
     transition: transform 0.5s ease;
     transform-style: preserve-3d;
 }
-.flip-card:hover .flip-card-inner, .flip-card.flipped .flip-card-inner {
-    transform: rotateY(180deg);
-}
-.flip-card-front,
-.flip-card-back {
+.flip-card-front{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -132,16 +119,6 @@ body p, a{
     max-width: 75%;
     height: auto;
 }
-.flip-card-back {
-    background-color: var(--bright-blue);
-    color: var(--white);
-    transform: rotateY(180deg);
-    padding: 25px;
-    font-family: "Hind Vadodara", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 12px;
-}
 
 /* page boxes style */
 .boxes{
@@ -153,7 +130,7 @@ body p, a{
     flex-direction: column;
     align-items: end;
     justify-content: space-between;
-    background-color: var(--white);
+    background-color: white;
     height: 20rem;
 }
 .boxes h1{
@@ -163,7 +140,7 @@ body p, a{
     text-decoration: none;
     padding: 10px;
     font-size: 2rem;
-    color: var(--hot-pink);
+    color: #004C99;
 }
 
 /* footer style */
@@ -179,20 +156,25 @@ footer{
 .version{
     padding: 12.5px;
     line-height: .5;
+    color: #004C99;
 }
-#versionp{
-    color: var(--burgundy);
+#version p{
+    color: #004C99;
 }
 
 .socials{
     padding: 12.5px;
     line-height: .5;
+    color: #004C99;
 }
-#socialsp{
-    color: var(--burgundy);
+#socials p{
+    color: #004C99;
 }
 .socials a{
     margin: 10px;
     text-decoration: none;
-    color: var(--hot-pink);
+    color: #004C99;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
 }
