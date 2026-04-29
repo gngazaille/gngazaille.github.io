@@ -21,7 +21,7 @@ body p, a{
     font-weight: 300;
     font-style: normal;
     font-size: 1rem;
-    color: #004C99;;
+    color: #004C99;
 }
 
 /* navbar styles */
@@ -102,14 +102,11 @@ body p, a{
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.5s ease;
-    transform-style: preserve-3d;
 }
 .flip-card-front{
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -149,10 +146,9 @@ footer{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-top: 1px solid var(--bright-blue);
+    border-top: 1px solid #004C99;
     padding: 25px;
 }
-
 .version{
     padding: 12.5px;
     line-height: .5;
@@ -161,7 +157,6 @@ footer{
 #version p{
     color: #004C99;
 }
-
 .socials{
     padding: 12.5px;
     line-height: .5;
@@ -177,4 +172,108 @@ footer{
     background-color: #fff;
     border-radius: 20px;
     padding: 5px 10px;
+}
+
+@media only screen and (min-width: 992px){
+
+/* global styles */
+body{
+    padding: 50px;
+}
+body h1{
+    font-size: 7rem;
+    line-height: 1;
+}
+body h2{
+    font-size: 3.5rem;
+}
+body p, a{
+    font-size: 1.125rem;
+}
+
+/* navbar styles */
+.navbar{
+    padding: 10px 20px !important;
+    z-index: 1000;
+    justify-content: center !important;
+    gap: 25px;
+}
+.navbar.sticking{
+    border-radius: 40px;
+}
+.navbar-item{
+    padding: 10px 20px;
+}
+.navbar-item.active {
+    border-radius: 40px;
+}
+
+/* banner styles */
+.banner{
+    padding: 50px;
+    margin-top: 50px !important;
+}
+.banner p{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+/* skills style */
+.skills{
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 25px;
+}
+.skills p{
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 1.125rem;
+}
+
+/* technologies flip cards */
+.technologies{
+    padding: 50px;
+    margin-bottom: 50px;
+}
+.tech-grid {
+    gap: 25px;
+    margin-top: 50px;
+}
+.flip-card {
+    width: 100px;
+    height: 100px;
+}
+.flip-card-front{
+    border-radius: 40px;
+}
+
+/* page boxes style */
+.boxes{
+    padding: 50px;
+    margin: 50px 0px;
+    border-radius: 40px;
+    height: 40rem;
+}
+.boxes a{
+    padding: 20px;
+    font-size: 4rem;
+}
+
+/* footer style */
+footer{
+    padding: 50px;
+}
+.version{
+    padding: 25px;
+    line-height: 1;
+}
+.socials{
+    padding: 25px;
+    line-height: 1;
+}
+.socials a{
+    margin: 20px;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
 }

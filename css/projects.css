@@ -1,0 +1,40 @@
+/* header */
+#projects-header{
+    margin-top: 25px;
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+#projects-header-p{
+    text-align: center;
+}
+
+/* boxes */
+.boxes-container{
+    margin-top: 50px !important;
+}
+body h1{
+    font-size: 2.5rem;
+}
+
+/* mhm page */
+#projects-mhm-header{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 25px;
+}
+.mhmpic img{
+    max-width: 100%;
+    border-radius: 50px 50px 0 0;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+.mhm-description p{
+    text-align: center !important;
+}
+.freemason-spring img{
+    max-width: 100%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}

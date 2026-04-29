@@ -1,18 +1,15 @@
 /* profile pic style */
-.profpic{
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.profpic h1{
+#about-header{
     margin-top: 25px;
     margin-bottom: 50px;
+    text-align: center;
+    padding: 25px;
 }
 .profpic img{
     max-width: 100%;
     border-radius: 50px 50px 0 0;
     object-fit: cover;
+    margin-bottom: 25px;
 }
 
 /* bio style */
@@ -70,4 +67,71 @@
 /* contact style */
 .contact{
     padding: 25px;
+}
+
+@media only screen and (min-width: 992px){
+
+/* profile pic style */
+.profpic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 25px;
+}
+.profpic img{
+    border-radius: 100px 100px 0 0;
+    max-width: 50%;
+}
+#mq{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+/* bio style */
+.bio{
+    padding: 50px;
+}
+#bio-p{
+    margin-top: 40px;
+}
+
+/* experience style */
+.experience{
+    border-radius: 100px;
+    padding: 25px;
+    margin: 25px 0px;
+}
+.job p{
+    margin: 20px;
+    margin-left: 40px;
+}
+.year p{
+    margin: 20px;
+    margin-right: 40px;
+}
+
+/* out of office style */
+.ofo{
+    padding: 50px;
+}
+#ofo-p{
+    margin-bottom: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.ofo img{
+    border-radius: 100px;
+    max-width: 37.5%;
+    height: auto;
+}
+
+/* contact style */
+.contact{
+    padding: 50px;
+}
 }
